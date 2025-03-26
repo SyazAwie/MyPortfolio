@@ -139,3 +139,88 @@ footer {
     margin-top: 30px;
     border-radius: 10px 10px 0 0;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    section {
+        width: 90%; /* Reduce width for better spacing */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce spacing between nav items */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile-Friendly Navigation */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+    }
+
+    /* Adjust Sections */
+    section {
+        width: 95%;
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Make Header & Nav More Compact */
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    /* Stack Navigation Links */
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Adjust Section Spacing */
+    section {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 15px;
+    }
+}
